@@ -1,0 +1,203 @@
+﻿@{
+    ViewData["Title"] = "My Work";
+}
+<center>
+    <h1>@ViewData["Title"]</h1>
+    <i>A worker in a skilled trade, especially one that involves making things by hand..</i>
+</center>
+
+
+<head>
+
+    <style>
+        .content {
+            height: 2000px; /* Make the content area tall enough to require scrolling */
+            padding: 20px;
+            background-color: #f4f4f4;
+            background-color: peachpuff;
+        }
+        .picture{
+            content:url('/Views/images/Header pic.jpg');
+            display:grid;
+        }
+        /*.food-basket{
+            border: 20px solid black;
+            width: 300px; height:300px;
+            position:absolute;
+
+        }*/
+        *{
+           box-sizing:border-box
+        }
+        .clm{
+            float:left;
+            width:33%;
+            padding:3px;
+            max-width: 500px;
+        }
+        .clm img{
+            height:300px;
+        }
+        button{
+            background-color:forestgreen;
+            border-radius:10px;
+            color:black;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+           
+        }
+
+
+        img {
+            width: 400px;
+            height: 300px;
+        }
+
+        .navigate-button {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body class="content">
+
+    <div>
+        <br />
+        <center>
+            <h5>Baskets</h5>
+        </center>
+        <br />
+
+    </div>
+
+    <div class=" row">
+        <div class="clm">
+            <img src="/js/images/Food basket.jpeg" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Food Basket</h6>
+            </center>
+            <i> Hand made Food Basket. Perfect for storing or carrying food.</i>
+            <b> Price: R150</b><br />
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+        <div class="clm">
+            <img src="/js/images/Baby Basket.jpeg" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Baby Basket</h6>
+            </center>
+            <i> Hand made Baby Basket. Perfect for carrying your child and comfortable with a blanket.</i><br />
+            <b> Price: R250</b><br />
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+        <div class="clm">
+            <img src="/js/images/Fruit basket.jpg" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Fruit Basket</h6>
+            </center>
+           <i> Hand made Fruit Basket. Perfect for storing or carrying fruit.</i>
+           <b> Price: R150</b><br />
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+ 
+
+    <div>
+        <br />
+        <center>
+            <h5>Beaded products</h5>
+        </center>
+        <br />
+
+    </div>
+
+    <div class=" row">
+        <div class="clm">
+            <img src="/js/images/Beaded necklace.jpg" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Beaded Necklace</h6>
+            </center>
+            <i> Hand made Food Basket. Perfect for storing or carrying food.</i>
+            <b> Price: R150</b><br />
+                <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+        <div class="clm">
+            <img src="/js/images/Flower earrings.png" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Flower Earrings</h6>
+            </center>
+            <i> Hand made Baby Basket. Perfect for carrying your child and comfortable with a blanket.</i><br />
+            <b> Price: R250</b><br />
+                <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+        <div class="clm">
+            <img src="/js/images/Colourful necklaces pack.jpg" alt="Image" width: 300px; height: 300px;">
+            
+            <center>
+                <h6> Colourful necklaces</h6>
+            </center>
+            <i> Hand made Fruit Basket. Perfect for storing or carrying fruit.</i><br />
+            <b> Price: R150</b>
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+    </div>
+    </div>
+    <div>
+        <br />
+        <center>
+            <h5>Wooden HandCrafts</h5>
+        </center>
+        <br />
+
+    </div>
+
+    <div class=" row">
+        <div class="clm">
+            <img src="/js/images/Wooden Cups.jpg" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Wooden Cups</h6>
+            </center>
+            <i> Hand made Food Basket. Perfect for storing or carrying food.</i>
+            <b> Price: R150</b><br />
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+        <div class="clm">
+            <img src="/js/images/Wooden Chair.jpg" alt="Image" width: 300px; height: 300px;">
+            <br />
+            <center>
+                <h6> Wooden Chair</h6>
+            </center>
+            <i> Hand made Baby Basket. Perfect for carrying your child and comfortable with a blanket.</i><br />
+            <b> Price: R250</b><br />
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+
+        <div class="clm">
+            <img src="/js/images/Wood Crafts Trade Events.jpg" alt="Image" width: 300px; height: 300px;">
+
+            <center>
+                <h6> Home accessories</h6>
+            </center>
+            <i> Hand made Fruit Basket. Perfect for storing or carrying fruit.</i><br />
+            <b> Price: R150</b>
+            <button class="navigate-button" onclick="location.href='@Url.Action("Index", "Products")'">Purchase</button>
+        </div>
+    </div>
+    </div>
+
+</body>

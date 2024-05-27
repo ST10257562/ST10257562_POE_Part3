@@ -1,0 +1,75 @@
+﻿@model IEnumerable<KhumaloCraft.Models.Order1>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <style>
+        button {
+            background-color: forestgreen;
+            border-radius: 10px;
+            color: black;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+
+<h1>Orders</h1>
+
+<body>
+    <p>
+        <!-- ... -->
+        <h6>Please remember the name fo the product when ordering</h6>
+        <a asp-action="Create">Create New Order</a>
+        <a onclick="location.href='@Url.Action("Index", "Products")'" class="btn btn-success">Back</a>
+    </p>
+</body>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OrderID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.OrderID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.OrderID">Delete</a>
+                    <button onclick="location.href='@Url.Action("Index", "Order_Product")'" type="submit"> View Avaliability</button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
